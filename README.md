@@ -17,15 +17,19 @@ var reclude = bone.require('bone-act-reclude');
 
 bone.dest('dist')
     .src('~/src/react.jsx')
-    .act(reclude);
+    .act(reclude({
+        base: 'src',
+        lexer: 'reclude',
+        lexerReplace: 'require'
+    }));
 ```
 
-./app.js 
+src/app.js 
 ```js
 var moduleA = reclude('./page/foo.js');
 ```
 
-./page/foo.js
+src/page/foo.js
 ```js
 console.log('bar');
 ```
