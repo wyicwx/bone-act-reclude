@@ -1,0 +1,16 @@
+{
+  "name": "bone-act-reclude",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "escodegen": "^1.8.1",
+    "esprima": "^3.0.0",
+    "estraverse": "^4.2.0"
+  }
+}
